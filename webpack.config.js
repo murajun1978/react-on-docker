@@ -31,9 +31,10 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin()
   ],
   devServer: {
-    contentBase: './client',
-    hot: true,
     inline: true,
-    port: 5000
+    progress: true,
+    colors: true,
+    hot: true,
+    historyApiFallback: true
   }
 }
